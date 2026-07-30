@@ -1,25 +1,24 @@
 \name{scheffe.test}
 \alias{scheffe.test}
 \title{
-Teste Scheffe considerando um conjunto de dados e informacoes da ANAVA
-}
-\description{Realiza o teste Scheffe em um conjunto de dados, necessitando de informacoes da ANAVA
-}
+Teste Scheffe para tratamentos em estrutura simples}
+\description{Realiza o teste Scheffe em um conjunto de dados, mas necessita de informacoes da ANAVA}
 \usage{
 scheffe.test(trat, resp, GLRes, SQRes, alpha = 0.05)
 }
 \arguments{
-  \item{trat}{nome da variavel ou da coluna do banco de dados que identifica os grupos (tratamentos) testados}
+  \item{trat}{nome da variavel ou da coluna do banco de dados que identifica os tratamentos ou grupos testados}
   \item{resp}{nome da variavel ou da coluna do banco de dados que identifica a variavel resposta}
   \item{GLRes}{graus de liberdade do residuo}
   \item{SQRes}{soma de quadrados do residuo}
   \item{alpha}{nivel de significancia do teste, o \emph{default} e 0.05}
 }
-\details{Permite a realizacao do teste Scheffe em um banco de dados solicitando dados da ANAVA
+\details{Permite a realizacao do teste Scheffe em um banco de dados.
 }
-\value{Retorna as estatisticas do teste Scheffe
+\value{Retorna as estatisticas do teste Scheffe.
 }
 \references{
+BANZATTO, D. A.; KRONKA, S. do N. Experimentação agricola. 4. ed. Jaboticabal: FUNEP, 2006.
 
 }
 
@@ -41,15 +40,15 @@ Beatriz de Oliveira Rodrigues
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{scheffe.test2}}
 }
 \examples{
-resp<-c(12.5,12.5,8.5,12.5,13.5,11.5,10.5,7.5,12.5,14.5,11.5,10.5,8.5,10.5,15.5,
-     13.5,11.5,6.5,11.5,13.5)
-trat<-rep(c(1,2,3,4,5),4)
-data.frame(trat,resp)
 
+data(exp5)
+attach(exp5)
+#Os valores GLRes e SQRes foram obtidos da ANAVA dos dados
 scheffe.test(trat, resp, GLRes=15, SQRes=23.456, alpha = 0.05)
+#Apos executar a funcao, declare na tela Editor de dados o contraste de interesse
 
 
 }

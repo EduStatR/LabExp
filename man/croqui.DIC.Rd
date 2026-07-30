@@ -2,7 +2,7 @@
 \alias{croqui.DIC}
 
 \title{
-Distribuicao aleatoria dos tratamentos no delineamento inteiramente ao acaso
+Sorteio dos tratamentos em um delineamento inteiramente ao acaso
 }
 \description{
 Apresenta a distribuicao dos tratamentos segundo o delineamento inteiramente ao acaso balanceado.
@@ -41,7 +41,7 @@ Natalia da Silva Martins Fonseca,
 \email{natalia.martins@unifal-mg.edu.br}
 }
 \note{Esta funcao realiza o sorteio dos tratamentos considerando um experimento balanceado.
-Como o croqui apresentado tenta ser o mais quadrado possivel, pode ser que apareca NA no(s) ultimo(s) espacos para representar que nenhum tratamento foi casualizado.
+Como o croqui apresentado tenta ser o mais quadrado possivel, pode ser que apareca NA no(s) ultimo(s) espaco(s) para relatar que nao ha parcela e nem tratamento.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
@@ -50,9 +50,11 @@ Como o croqui apresentado tenta ser o mais quadrado possivel, pode ser que apare
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-
+#Exemplo: sorteio de 3 tratamentos com 4 repeticoes
 croqui.DIC(ntrat=3, nrep=4)
+#Exemplo: sorteio de 3 tratamentos com 5 repeticoes
 croqui.DIC(ntrat=3, nrep=5)  #aparece NA na linha 4 e coluna 4
+#Exemplo: sorteio de 3 tratamentos com 6 repeticoes
 croqui.DIC(ntrat=3, nrep=6)  #aparece NA na linha 4 e colunas 4 e 5
 
 }

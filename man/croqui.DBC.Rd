@@ -1,16 +1,16 @@
 \name{croqui.DBC}
 \alias{croqui.DBC}
 \title{
-Distribuicao aleatoria dos tratamentos no delineamento em blocos completos
+Sorteio dos tratamentos em um delineamento em blocos completos
 }
 \description{
-Apresenta a distribuicao aleatoria dos tratamentos dentro de cada bloco.
+Apresenta a distribuicao aleatoria dos tratamentos em um experimento em blocos completos.
 }
 \usage{
 croqui.DBC(ntrat, nblocos)
 }
 \arguments{
-  \item{ntrat}{numero de tratamentos em teste}
+  \item{ntrat}{numero de tratamentos em teste no experimento}
   \item{nblocos}{numero de blocos no experimento}
 }
 \details{
@@ -39,6 +39,7 @@ Natalia da Silva Martins Fonseca,
 \email{natalia.martins@unifal-mg.edu.br}
 }
 \note{
+O resultado final e um croqui com os tratamentos distribuidos dentro de cada bloco.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
@@ -47,6 +48,7 @@ Natalia da Silva Martins Fonseca,
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
+#Exemplo: sorteio de 3 tratamentos em 4 blocos
 
 croqui.DBC(ntrat=3,nblocos=4)
 

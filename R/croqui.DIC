@@ -17,3 +17,8 @@ croqui.DIC <- function(ntrat, nrep){
   cat("------------------------------\n")
 
 }
+
+
+
+
+

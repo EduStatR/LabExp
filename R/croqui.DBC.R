@@ -10,7 +10,11 @@ croqui.DBC <- function(ntrat, nblocos){
 
   rownames(croqui) <- paste("Bloco", 1:nblocos)
   colnames(croqui) <- paste("Parcela", 1:ntrat)
-
-  return(croqui)
+  cat("\n")
+  cat("Distribuicao dos tratamentos\n")
+  cat("------------------------------\n")
+  print(croqui)
+  cat("------------------------------\n")
 }
+
 

@@ -37,16 +37,15 @@ Flavio Bittencourt,
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{scheffe.test}}
 }
 \examples{
 
-medias<-c(95.5,94.7,91,99.3,85.7) #vetor de medias dos tratamentos
-repet<-c(rep(3,5))                #vetor das repeticoes dos tratamentos
-GLRes<-10                         #graus de liberdade do residuo
-SQRes<-40.8                       #soma de quadrados do resíduo
-
-scheffe.test2(medias, repet, GLRes, SQRes, alpha = 0.05)
+data(exp6)
+attach(exp6)
+#Os valores GLRes e SQRes foram obtidos da ANAVA dos dados
+scheffe.test2(medias, repet, GLRes=10, SQRes=40.8, alpha = 0.05)
+#Apos executar a funcao, declare na tela Editor de dados o contraste de interesse
 
 
 }

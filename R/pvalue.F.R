@@ -1,6 +1,6 @@
 pvalue.F <- function(fcalc, df1, df2,graf=TRUE){
 
- if(!graf) graphics.off()
+  if(!graf) graphics.off()
   a <- pf(fcalc, df1, df2, lower.tail = FALSE)
 
   if(fcalc < 10){

@@ -77,31 +77,33 @@ scheffe.test2 <- function(medias, repet, GLRes, SQRes, alpha = 0.05){
   #-----------------------------------------
   # Saída
   #-----------------------------------------
+  cat("\n")
+  cat("----------------------------------------------------------")
   cat("\nContraste original:", contr_original)
   cat("\nContraste utilizado:", contr)
   cat("\nOs valores dos coeficientes do contraste foram divididos por:", max_coef)
   cat("\nNível de significância:", alpha)
-  cat("\nEstimativa do contraste:", estimativa)
-  cat("\nDMS Scheffé:", S, "\n")
-  cat("Valor-p Scheffé:", valorP, "\n")
+  cat("\nEstimativa do contraste: Y\u0302 =", estimativa)
+  cat("\nValor critico do teste de Scheffé: S =", S, "\n")
+  cat("Valor-p do teste de Scheffé: valor-p =", valorP, "\n")
 
   cat("\nConclusão:\n")
 
   if(abs(estimativa) < S){
 
-    cat("- O valor absoluto da estimativa do contraste \n")
-    cat("(", abs(estimativa), ") é menor que a DMS Scheffé (", S, ").\n")
-    cat("- O contraste NÃO DIFERE significativamente\n ao nível de",
-        (alpha * 100), "% de probabilidade.\n")
-    cat("- Os grupos de médias testados NÃO DIFEREM entre si.\n")
+    cat("* O valor absoluto da estimativa do contraste (", abs(estimativa), ") é menor\n")
+    cat(" que o valor critico do teste de Scheffé (", S, ").\n")
+    cat("*O contraste NÃO DIFERE significativamente ao nível de\n", (alpha * 100),
+        "% de probabilidade.\n")
+    cat("* Os grupos de médias testados NÃO DIFEREM entre si.\n")
 
   } else {
 
-    cat("- O valor absoluto da estimativa do contraste \n")
-    cat("(", abs(estimativa), ") é maior ou igual à DMS Scheffé (", S, ").\n")
-    cat("- O contraste DIFERE significativamente ao nível de",
-        (alpha * 100), "% de probabilidade.\n")
-    cat("- Os grupos de médias testados DIFEREM entre si.\n")
+    cat("* O valor absoluto da estimativa do contraste (", abs(estimativa), ") é maior ou igual\n")
+    cat(" ao valor critico do teste de Scheffé (",S,").\n")
+    cat("* O contraste DIFERE significativamente ao nível de", (alpha * 100), "% de probabilidade.\n")
+    cat("* Os grupos de médias testados DIFEREM entre si.\n")
+    cat("----------------------------------------------------------\n")
   }
 
   invisible(list(
