@@ -2,6 +2,14 @@
 
 O **LabExp** é um pacote, ainda em desenvolvimento, destinado às disciplinas de **Estatística Experimental** e **Planejamento e Análise de Experimentos**. Ele reúne funções desenvolvidas para ampliar os recursos disponíveis na comunidade **R**, oferecendo ferramentas adicionais para o planejamento, a análise e a interpretação de experimentos.
 
+Algumas funções são:
+
+1) sorteio de tratamentos para experimentos instalados em DIC e DBC
+2) gráficos das médias - desvio padrão e erro padrão
+3) gráfico de modelos de regressão para ensaios fatoriais duplos
+4) teste de Scheffé
+
+
 ## 🚀 Instalação
 
 No **R**, execute os comandos abaixo.
