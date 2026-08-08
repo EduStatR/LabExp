@@ -2,7 +2,7 @@
 
 O **LabExp** é um pacote, ainda em desenvolvimento, destinado às disciplinas de **Estatística Experimental** e **Planejamento e Análise de Experimentos**. Ele reúne funções desenvolvidas para ampliar os recursos disponíveis na comunidade **R**, oferecendo ferramentas adicionais para o planejamento, a análise e a interpretação de experimentos.
 
-Algumas funções são:
+As funções são:
 
 1) sorteio de tratamentos para experimentos instalados em DIC e DBC: **croqui.DIC** e **croqui.DBC**;
 2) gráficos das médias para uma variável e para várias resposta - desvio padrão e erro padrão: **graf.medias** e **graf.medias2**;
