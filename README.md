@@ -4,10 +4,10 @@ O **LabExp** é um pacote, ainda em desenvolvimento, destinado às disciplinas d
 
 Algumas funções são:
 
-1) sorteio de tratamentos para experimentos instalados em DIC e DBC
-2) gráficos das médias - desvio padrão e erro padrão
-3) gráfico de modelos de regressão para ensaios fatoriais duplos
-4) teste de Scheffé
+1) sorteio de tratamentos para experimentos instalados em DIC e DBC: **croqui.DIC** e **croqui.DBC**;
+2) gráficos das médias para uma variável e para várias resposta - desvio padrão e erro padrão: **graf.medias** e **graf.medias2**;
+3) gráfico de modelos polinomiais de regressão (nenhum, 1º e 2º graus) para ensaios fatoriais duplos com ou sem interação: **graf.reg** e **graf.reg**;
+4) teste de Scheffé para tratamentos em estrutura simples com banco de dados ou somente com inserção direta das médias: **scheffe.test** e **scheffe.test2**.
 
 
 ## 🚀 Instalação
@@ -64,6 +64,6 @@ help(croqui.DIC)
 
 ## 📚 Objetivo
 
-O **LabExp** tem como objetivo disponibilizar funções que auxiliem professores, estudantes e pesquisadores nas disciplinas de **Estatística Experimental** e **Planejamento e Análise de Experimentos**, complementando os recursos já disponíveis no ambiente **R**.
+O **LabExp** tem como objetivo disponibilizar funções que auxiliem professores, estudantes e pesquisadores nas disciplinas de **Estatística Experimental** e **Planejamento e Análise de Experimentos**, ou até mesmo, na análise de experimentos, complementando os recursos já disponíveis no ambiente **R**.
 
-Bom estudo!
+Bom proveito!
