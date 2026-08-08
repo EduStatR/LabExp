@@ -4,10 +4,10 @@ O **LabExp** é um pacote, ainda em desenvolvimento, destinado às disciplinas d
 
 As funções são:
 
-1) sorteio de tratamentos para experimentos instalados em DIC e DBC: **croqui.DIC** e **croqui.DBC**;
-2) gráficos das médias para uma variável e para várias resposta - desvio padrão e erro padrão: **graf.medias** e **graf.medias2**;
-3) gráfico de modelos polinomiais de regressão (nenhum, 1º e 2º graus) para ensaios fatoriais duplos com ou sem interação: **graf.reg** e **graf.reg**;
-4) teste de Scheffé para tratamentos em estrutura simples com banco de dados ou somente com inserção direta das médias: **scheffe.test** e **scheffe.test2**.
+1)  **croqui.DIC** e **croqui.DBC**: aplicação em sorteio de tratamentos para experimentos instalados em DIC e DBC;
+2) **graf.medias** e **graf.medias2**: confecciona gráficos das médias para uma variável e para várias resposta, permitindo visualizar o desvio padrão, erro padrão ou nenhum dos dois;
+3) **graf.reg** e **graf.reg2**: confecciona gráficos de modelos polinomiais de regressão (nenhum, 1º e 2º graus) para ensaios fatoriais duplos com ou sem interação - não é aplicado em superfície de resposta;
+4) **scheffe.test** e **scheffe.test2**: realiza o teste de Scheffé em experimentos com tratamentos em estrutura simples. Os dados podem vir do banco de dados utilizados na ANAVA ou somente com inserção direta das médias - muito útil no caso de exercícios em que se tem as médias e as informações da ANAVA.
 
 
 ## 🚀 Instalação
